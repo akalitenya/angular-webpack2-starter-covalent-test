@@ -22,6 +22,7 @@ import { APP_PROVIDERS } from './app.providers';
 import { AppComponent } from './app.component';
 
 import { AppState } from './reducers';
+import { CovalentCoreModule } from '@covalent/core';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { AppState } from './reducers';
     APP_IMPORTS,
     BrowserModule,
     HttpModule,
+    CovalentCoreModule.forRoot(),
   ],
   bootstrap: [AppComponent],
   providers: [APP_PROVIDERS]
